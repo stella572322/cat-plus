@@ -1,5 +1,25 @@
-function App() {
-  return <div className='App'>11111</div>;
-}
+import React from 'react';
+import styled from 'styled-components';
+import Header from './components/Header';
+import MainCarousel from './components/MainCarousel';
 
-export default App;
+const Main = styled.div`
+  min-height: 100vh;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+`;
+
+export default function App() {
+  return (
+    <>
+      <Main>
+        <Header />
+        <MainCarousel />
+      </Main>
+    </>
+  );
+}
