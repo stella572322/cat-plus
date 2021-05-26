@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Header from './components/Header';
 import MainCarousel from './components/MainCarousel';
+import Article from './components/Article';
 
 const Main = styled.div`
   min-height: 100vh;
@@ -19,6 +20,7 @@ export default function App() {
       <Main>
         <Header />
         <MainCarousel />
+        <Article />
       </Main>
     </>
   );
